@@ -2214,6 +2214,7 @@ html {
   
   .f-navigation-link {
     color: var(--flowui-component-library--gray-900);
+    display: inline-block;
     letter-spacing: -.01em;
     white-space: nowrap;
     background-color: rgba(0, 0, 0, 0);
@@ -2223,7 +2224,8 @@ html {
     font-weight: 500;
     line-height: 24px;
     text-decoration: none;
-    transition: all .35s;
+    transition: all .50s;
+    position: relative;
   }
   
   .f-navigation-link:hover {
@@ -2690,7 +2692,7 @@ html {
   }
   
   .f-section-large-4 {
-    padding: 60px 5% 92px;
+    padding: 60px 5% 9px;
     position: relative;
   }
   
@@ -3083,6 +3085,7 @@ html {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+    order: 1;
   }
   
   .f-margin-bottom-73 {
@@ -3288,6 +3291,7 @@ html {
   
   .f-feature-card-large {
     background-color: var(--flowui-component-library--gray-100);
+    display: flex;
     text-align: center;
     border-radius: 12px;
     flex-direction: column;
@@ -3296,7 +3300,6 @@ html {
     margin-left: 20px;
     margin-right: 20px;
     padding: 40px 20px 20px;
-    display: flex;
   }
   
   .f-grid-two-column {
@@ -4409,3 +4412,16 @@ html {
   .f-h6-heading {
     margin-right: 10px;
   }
+  
+  .vertical-line {
+    position: absolute;
+    height: 100%;
+    width: 2px; /* Adjust the width of the line as needed */
+    background-color: #ccc; /* Adjust the color of the line as needed */
+    right: 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+}
